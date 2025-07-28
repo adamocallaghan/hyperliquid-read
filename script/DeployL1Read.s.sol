@@ -9,13 +9,13 @@ contract DeployL1Read is Script {
 
         // deployer
         uint256 deployerPrivateKey = vm.envUint("DEPLOYER_PRIVATE_KEY");
-        
+
         vm.createSelectFork("hyperevm");
 
         vm.startBroadcast(deployerPrivateKey);
 
-        // deploy OFT
-        L1Read l1read = new L1Read{salt: "letsread"}();
+        // deploy read contract
+        L1Read l1read = new L1Read();
         console2.log("L1Read contract deployed on HyperEVM to: ", address(l1read));
 
         vm.stopBroadcast();

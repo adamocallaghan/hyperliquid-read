@@ -4,7 +4,7 @@ out = "out"
 libs = ["lib"]
 
 [rpc_endpoints]
-hyperevm = "${HYPEREVM_SEPOLIA_RPC}"
+hyperevm = "${HYPEREVM_TESTNET_RPC}"
 
 [etherscan]
 hyperevm = { key = "${HYPEREVM_ETHERSCAN_API_KEY}" }
