@@ -9,6 +9,3 @@ hyperevm = "${HYPEREVM_TESTNET_RPC}"
 [etherscan]
 hyperevm = { key = "${HYPEREVM_ETHERSCAN_API_KEY}" }
 
-remappings = [
-    "@solady-tokens/=lib/solady/src/tokens/"
-]
